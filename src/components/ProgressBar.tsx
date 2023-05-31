@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useStore } from '../store/store';
 
 interface Props {
   min?: number;
@@ -6,10 +7,14 @@ interface Props {
   step?: number;
 }
 export const ProgressBar = ({min = 0, max = 100, step = 1}: Props) => {
-  const [length, setLength] = useState(0);
+  const lengthPassword = useStore((state) => state.lengthPassword);
+  const setlengthPassword = useStore((state) => state.setlengthPassword);
+
+  const [length, setLength] = useState(lengthPassword);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setLength(event.target.valueAsNumber);
+    setlengthPassword(event.target.valueAsNumber);
   };
 
   const backgroundStyle = `linear-gradient(to right, rgb(29 78 216) 0%, rgb(29 78 216) ${((length - min) / (max - min)) * 100}%, #E2E8F0 ${((length - min) / (max - min)) * 100}%, #E2E8F0 100%)`;
