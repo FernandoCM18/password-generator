@@ -18,6 +18,7 @@ export function evaluatePassword(password: string) {
 
   score = lengthScore + upperCaseScore + lowerCaseScore + numbersScore + specialScore; 
   if (score <= 0) score = 0;
+  if (score >= 4) score = 4;
 
 
   return score;
