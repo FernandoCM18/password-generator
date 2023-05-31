@@ -25,7 +25,7 @@ export const SecurityLevel = ({activeCount, message}: Props) => {
   return (
     <div className="flex justify-between items-center bg-gray-100 p-4">
       <p className="text-gray-500">Nivel de seguridad: <span className="font-bold">{message}</span></p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-9 h-9">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-9 h-9 -mt-4">
         {bars}
       </svg>
     </div>
