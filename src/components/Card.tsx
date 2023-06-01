@@ -6,9 +6,12 @@ import { ProgressBar } from './ProgressBar';
 import { SecurityLevel } from './SecurityLevel';
 import { evaluatePassword } from '../helpers/evaluatePassword';
 
-export const Card = () => {
+interface Props {
+  showToaster: (show: boolean) => void
+}
+
+export const Card = ({showToaster}: Props) => {
   let message = '';
-  const INFO_TEXT = 'Genera una contraseña';
   const password = useStore((state) => state.password);
   const activeCount = evaluatePassword(password);
 
@@ -19,11 +22,19 @@ export const Card = () => {
   if (activeCount === 3 && password.length > 0) message = 'Fuerte';
   if (activeCount === 4 && password.length > 0) message = 'Muy fuerte';
 
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(password);
+    showToaster(true);
+    setTimeout(() => {
+      showToaster(false);
+    }, 2000);
+  };
+
   
   return (
     <article className="bg-white p-5 rounded-xl space-y-4 shadow-xl max-w-[327px]">
       <h2 className="text-2xl font-bold">Generador de contraseña</h2>
-      <Label text={password || INFO_TEXT} />
+      <Label text={password} copyClipboard={copyToClipboard} />
       <ProgressBar />
       <Options />
       <SecurityLevel activeCount={activeCount} message={message} />
