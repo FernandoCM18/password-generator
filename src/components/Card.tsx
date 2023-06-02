@@ -1,9 +1,5 @@
-import { useStore } from '../store/store';
-import { Button } from './Button';
-import { Label } from './Label';
-import { Options } from './Options';
-import { ProgressBar } from './ProgressBar';
-import { SecurityLevel } from './SecurityLevel';
+import { useData } from '../hooks/useData';
+import { Button, Label, Options, ProgressBar, SecurityLevel} from './';
 import { evaluatePassword } from '../helpers/evaluatePassword';
 
 interface Props {
@@ -12,7 +8,7 @@ interface Props {
 
 export const Card = ({showToaster}: Props) => {
   let message = '';
-  const password = useStore((state) => state.password);
+  const {password} = useData();
   const activeCount = evaluatePassword(password);
 
   if (password.length === 0) message = '';
@@ -32,8 +28,8 @@ export const Card = ({showToaster}: Props) => {
 
   
   return (
-    <article className="bg-white p-5 rounded-xl space-y-4 shadow-xl max-w-[327px]">
-      <h2 className="text-2xl font-bold">Generador de contraseña</h2>
+    <article className="bg-white dark:bg-slate-900 p-5 rounded-xl space-y-4 shadow-xl dark:shadow-none max-w-[327px]">
+      <h2 className="text-2xl font-bold dark:text-slate-100">Generador de contraseña</h2>
       <Label text={password} copyClipboard={copyToClipboard} />
       <ProgressBar />
       <Options />

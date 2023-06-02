@@ -1,5 +1,4 @@
-import { shallow } from 'zustand/shallow';
-import { useStore } from '../store/store';
+import { useData } from '../hooks/useData';
 
 const OPTIONS = [
   {
@@ -20,22 +19,13 @@ const OPTIONS = [
   }
 ];
 export const Options = () => {
-  const {uppercase, lowercase, numbers, symbols, changeUppercase, changeLowercase, changeNumbers, changeSymbols} = useStore((state) => ({
-    uppercase: state.uppercase,
-    lowercase: state.lowercase,
-    numbers: state.numbers,
-    symbols: state.symbols,
-    changeUppercase: state.changeUppercase,
-    changeLowercase: state.changeLowercase,
-    changeNumbers: state.changeNumbers,
-    changeSymbols: state.changeSymbols,
-  }), shallow);
+  const { uppercase, lowercase, numbers, symbols, changeUppercase, changeLowercase, changeNumbers, changeSymbols} = useData();
 
   return (
     <div className="flex flex-col">
       {
         OPTIONS.map((option) => (
-          <label htmlFor={option.name} className="text-gray-500" key={option.name}>
+          <label htmlFor={option.name} className="text-gray-500 dark:text-slate-400" key={option.name}>
             <input 
               className="form-checkbox rounded text-blue-700 border-2 mr-2 focus:ring-0" 
               type="checkbox" 
