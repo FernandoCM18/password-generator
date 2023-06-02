@@ -7,12 +7,12 @@ function App() {
   const [showToast, setShowToast] = useState(false);
   
   return (
-    <>
+    <div className="bg-slate-50 dark:bg-slate-950">
       <Container>
         {showToast && <Toast message="¡Contraseña copiada!" />}
         <Card showToaster={setShowToast} />         
       </Container>
-    </>
+    </div>
   );
 }
 
