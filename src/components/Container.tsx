@@ -6,5 +6,5 @@ export const Container = ({children}: Props) => {
     <div className="flex h-screen justify-center items-center">  
       {children}
     </div>
-  )
-}
+  );
+};
