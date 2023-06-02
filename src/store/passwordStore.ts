@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-interface IStore {
+interface IPasswordStore {
   password: string;
   lengthPassword: number;
   uppercase: boolean;
@@ -8,7 +8,7 @@ interface IStore {
   numbers: boolean;
   symbols: boolean;
 
-  setlengthPassword: (length: number) => void;
+  setLengthPassword: (length: number) => void;
   setPassword: (password: string) => void;
   changeUppercase: () => void;
   changeLowercase: () => void;
@@ -16,14 +16,14 @@ interface IStore {
   changeSymbols: () => void;
 }
 
-export const useStore = create<IStore>((set) => ({
+export const usePasswordStores = create<IPasswordStore>((set) => ({
   password: '',
   lengthPassword: 0,
   uppercase: false,
   lowercase: false,
   numbers: false,
   symbols: false,
-  setlengthPassword: (length) => set(() => ({ lengthPassword: length })),
+  setLengthPassword: (length) => set(() => ({ lengthPassword: length })),
   setPassword: (password) => set(() => ({ password: password })),
   changeUppercase: () => set((state) => ({ uppercase: !state.uppercase })),
   changeLowercase: () => set((state) => ({ lowercase: !state.lowercase })),
