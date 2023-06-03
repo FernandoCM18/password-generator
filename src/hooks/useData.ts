@@ -1,5 +1,7 @@
 import { shallow } from 'zustand/shallow';
 import { usePasswordStores } from '../store/passwordStore';
+import { generatePassword } from '../helpers/generatePassword';
+import { evaluatePassword } from '../helpers/evaluatePassword';
 
 export const useData = () => {
   const {
@@ -30,15 +32,37 @@ export const useData = () => {
     changeSymbols: state.changeSymbols,
   }), shallow);
 
+  const setPasswordHandler = () => {
+    const newPassword = generatePassword({
+      length: lengthPassword,
+      uppercase,
+      lowercase,
+      numbers,
+      symbols,
+    });
+    setPassword(newPassword);
+  };
+
+  const copyPassword = () => {
+    navigator.clipboard.writeText(password);
+  };
+
+  const activeCount = evaluatePassword(password);
+
+
+
+
 
   return {
+    activeCount,
     password,
     lengthPassword,
     uppercase,
     lowercase,
     numbers,
     symbols,
-    setPassword,
+    setPasswordHandler,
+    copyPassword,
     setLengthPassword,
     changeUppercase,
     changeLowercase,

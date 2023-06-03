@@ -11,7 +11,10 @@ function App() {
       <Container>
         <ToggleTheme theme={theme} toggleTheme={toggleTheme} />
         {showToast && <Toast message="¡Contraseña copiada!" />}
-        <Card showToaster={setShowToast} />         
+        <Card 
+          title="Generador de contraseña"
+          showToaster={setShowToast} 
+        />         
       </Container>
     </div>
   );
