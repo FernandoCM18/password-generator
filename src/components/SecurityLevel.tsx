@@ -8,8 +8,8 @@ interface Props {
 export const SecurityLevel = ({activeCount, message}: Props) => {
   const [totalBars] = useState(4);
 
-  const activeColor = 'text-gray-300 dark:text-slate-300';
-  const inactiveColor = 'text-gray-500 dark:text-slate-500';
+  const activeColor = 'text-gray-500 dark:text-slate-300';
+  const inactiveColor = 'text-gray-300 dark:text-slate-500';
 
   const bars = Array.from({ length: totalBars }, (_, index) => (
     <rect
