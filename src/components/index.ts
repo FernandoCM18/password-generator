@@ -6,3 +6,4 @@ export * from './Options';
 export * from './ProgressBar';
 export * from './SecurityLevel';
 export * from './Toast';
+export * from './ToggleTheme';
