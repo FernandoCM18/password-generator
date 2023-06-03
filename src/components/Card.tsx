@@ -28,8 +28,8 @@ export const Card = ({showToaster}: Props) => {
 
   
   return (
-    <article className="bg-white dark:bg-slate-900 p-5 rounded-xl space-y-4 shadow-xl dark:shadow-none max-w-[327px]">
-      <h2 className="text-2xl font-bold dark:text-slate-100">Generador de contraseña</h2>
+    <article className="bg-white dark:bg-slate-900 p-5 md:px-11 md:py-6 rounded-xl space-y-4 shadow-xl dark:shadow-none w-[327px] md:w-[650px] lg:w-[655px]">
+      <h2 className="text-2xl font-bold dark:text-slate-100 md:text-center">Generador de contraseña</h2>
       <Label text={password} copyClipboard={copyToClipboard} />
       <ProgressBar />
       <Options />
