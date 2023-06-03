@@ -16,13 +16,13 @@ export const ProgressBar = ({min = 0, max = 100, step = 1}: Props) => {
     setLengthPassword(event.target.valueAsNumber);
   };
 
-  const backgroundStyle = `linear-gradient(to right, rgb(29 78 216) 0%, rgb(29 78 216) ${((length - min) / (max - min)) * 100}%, #E2E8F0 ${((length - min) / (max - min)) * 100}%, #E2E8F0 100%)`;
+  const backgroundStyle = `linear-gradient(to right, #2563eb 0%, #2563eb ${((length - min) / (max - min)) * 100}%, #f3f4f6 ${((length - min) / (max - min)) * 100}%, #f3f4f6 100%)`;
 
 
   return (
     <div className="flex flex-col gap-4">
       <h3 className="flex justify-between items-center text-xl font-bold dark:text-slate-100">
-        Longitud de caràcter <span className="text-blue-700">{length}</span>
+        Longitud de caràcter <span className="text-blue-600">{length}</span>
       </h3>
       <input
         type="range"
@@ -31,7 +31,7 @@ export const ProgressBar = ({min = 0, max = 100, step = 1}: Props) => {
         step={step}
         value={length}
         onChange={handleChange}
-        className="appearance-none w-full h-2 rounded-full outline-none accent-blue-700"
+        className="appearance-none w-full h-2 rounded-full outline-none accent-blue-600"
         style={{ background: backgroundStyle }}
       />
     </div>
