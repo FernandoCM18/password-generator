@@ -11,11 +11,11 @@ const OPTIONS = [
   },
   {
     name: 'numbers',
-    label: 'Incluye letras numeros.'
+    label: 'Incluye numeros.'
   },
   {
     name: 'symbols',
-    label: 'Incluye letras simbolos.'
+    label: 'Incluye simbolos.'
   }
 ];
 export const Options = () => {
@@ -27,7 +27,7 @@ export const Options = () => {
         OPTIONS.map((option) => (
           <label htmlFor={option.name} className="text-gray-500 dark:text-slate-400" key={option.name}>
             <input 
-              className="form-checkbox rounded text-blue-700 border-2 mr-2 focus:ring-0" 
+              className="form-checkbox rounded text-blue-600 border-2 mr-2 focus:ring-0" 
               type="checkbox" 
               name={option.name}
               checked={option.name === 'uppercase' ? uppercase : option.name === 'lowercase' ? lowercase : option.name === 'numbers' ? numbers : symbols}
