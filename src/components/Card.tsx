@@ -15,6 +15,7 @@ export const Card = ({title, showToaster}: Props) => {
     lowercase, 
     numbers, 
     symbols,
+    message,
     changeUppercase,
     changeLowercase,
     changeNumbers,
@@ -23,16 +24,6 @@ export const Card = ({title, showToaster}: Props) => {
     setLengthPassword
   } = useData();
   
-  const PASSWORD_LENGTH = password.length;
-  let message = '';
-
-  if (PASSWORD_LENGTH === 0) message = '';
-  if (activeCount === 0 && PASSWORD_LENGTH > 0) message = 'Muy débil';
-  if (activeCount === 1 && PASSWORD_LENGTH > 0) message = 'Débil';
-  if (activeCount === 2 && PASSWORD_LENGTH > 0) message = 'Buena';
-  if (activeCount === 3 && PASSWORD_LENGTH > 0) message = 'Fuerte';
-  if (activeCount === 4 && PASSWORD_LENGTH > 0) message = 'Muy fuerte';
-
   const copyToClipboard = () => {
     copyPassword();
     showToaster(true);
