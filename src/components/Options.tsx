@@ -1,4 +1,13 @@
-import { useData } from '../hooks/useData';
+interface Props {
+  uppercase: boolean; 
+  lowercase: boolean; 
+  numbers: boolean; 
+  symbols: boolean; 
+  changeUppercase: () => void;
+  changeLowercase: () => void;
+  changeNumbers: () => void;
+  changeSymbols: () => void;
+}
 
 const OPTIONS = [
   {
@@ -18,8 +27,17 @@ const OPTIONS = [
     label: 'Incluye simbolos.'
   }
 ];
-export const Options = () => {
-  const { uppercase, lowercase, numbers, symbols, changeUppercase, changeLowercase, changeNumbers, changeSymbols} = useData();
+
+export const Options = ({
+  uppercase,
+  lowercase,
+  numbers,
+  symbols,
+  changeUppercase,
+  changeLowercase,
+  changeNumbers,
+  changeSymbols
+}: Props) => {
 
   return (
     <div className="flex flex-col">

@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
-import { useData } from '../hooks/useData';
-
 interface Props {
   min?: number;
   max?: number;
   step?: number;
+  lengthPassword: number;
+  setLengthPassword: (length: number) => void
 }
-export const ProgressBar = ({min = 0, max = 100, step = 1}: Props) => {
-  const {lengthPassword, setLengthPassword} = useData();
+export const ProgressBar = ({min = 0, max = 100, step = 1, lengthPassword, setLengthPassword}: Props) => {
 
   const [length, setLength] = useState(lengthPassword);
 
