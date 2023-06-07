@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 export const useTheme = () => {
-  const [theme, setTheme] = useState('system');
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'system');
   const element = document.body;
   const mql = window.matchMedia('(prefers-color-scheme: dark)');  
 
