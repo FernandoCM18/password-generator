@@ -21,6 +21,11 @@ Podrás observar que tan fuerte es tu contraseña con unas lineas de progreso y 
 
 También como extra se agrego el poder seleccionar un tema **Dark**, **Light** o puedes seleccionar el de tu sistema operativo.
 
+## Stack
+- React con ViteJs + TypeScript + SWC
+- Tailwindcss
+- Zustand
+
 ## Instalación
 
 1. Descarga o clona el repositorio.
