@@ -47,7 +47,7 @@ También como extra se agrego el poder seleccionar un tema **Dark**, **Light** o
 ## Capturas
 
 ### Mobile
-<img src="./src/assets/screenshot/iPhone-dark.jpeg" width="100" />
+<img src="./src/assets/screenshot/iPhone-dark.jpeg" />
 <img src="./src/assets/screenshot/iPhone-dark-data.jpeg" width="100" />
 <img src="./src/assets/screenshot/iPhone-light.jpeg" width="100" />
 <img src="./src/assets/screenshot/iPhone-light-data.jpeg" width="100" />
