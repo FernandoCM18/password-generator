@@ -32,7 +32,7 @@ export const ToggleTheme = () => {
             <button
               key={option.id} 
               name={option.id}
-              className={`${theme === option.id && 'bg-white dark:bg-slate-800 rounded-md shadow-md p-1 text-blue-600 md:hover:opacity-100'} flex items-center space-x-1 sm:hover:opacity-100 md:hover:opacity-40 transition-opacity`}
+              className={`${theme === option.id && 'bg-white dark:bg-slate-800 lg:hover:opacity-100 rounded-md shadow-md p-1 text-blue-600'} flex items-center space-x-1 sm:hover:opacity-100 md:hover:opacity-40 transition-opacity`}
               onClick={() => setTheme(option.id)}
             >
               {option.svg}
