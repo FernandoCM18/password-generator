@@ -46,13 +46,23 @@ También como extra se agrego el poder seleccionar un tema **Dark**, **Light** o
 
 ## Capturas
 
+### Mobile
+<img src="./src/assets/screenshot/iPhone-dark.jpeg" width="200" />
+<img src="./src/assets/screenshot/iPhone-dark-data.jpeg" width="200" />
+<img src="./src/assets/screenshot/iPhone-light.jpeg" width="200" />
+<img src="./src/assets/screenshot/iPhone-light-data.jpeg" width="200" />
 
-![iPad-Dark](/src/assets/screenshot/iPad-Dark.jpeg)
-![iPad-Light](/src/assets/screenshot/iPad-Light.jpeg)
-![iPone-Dark](/src/assets/screenshot/iPhone-Dark.jpeg)
-![iPone-Light](/src/assets/screenshot/iPhone-Light.jpeg)
-![Desktop-Dark](/src/assets/screenshot/Desktop-Dark.jpeg)
-![Desktop-Light](/src/assets/screenshot/Desktop-Light.jpeg)
+### Tablet
+<img src="./src/assets/screenshot/iPad-dark.jpeg" width="200" />
+<img src="./src/assets/screenshot/iPad-dark-data.jpeg" width="200" />
+<img src="./src/assets/screenshot/iPad-light.jpeg" width="200" />
+<img src="./src/assets/screenshot/iPad-light-data.jpeg" width="200" />
+
+### Desktop
+<img src="./src/assets/screenshot/Desktop-dark.jpeg" width="200" />
+<img src="./src/assets/screenshot/Desktop-dark-data.jpeg" width="200" />
+<img src="./src/assets/screenshot/Desktop-light.jpeg" width="200" />
+<img src="./src/assets/screenshot/Desktop-light-data.jpeg" width="200" />
 
 
 
