@@ -1,5 +1,5 @@
 import { useData } from '../hooks/useData';
-import { Button, Label, Options, ProgressBar, SecurityLevel} from './';
+import { Button, PasswordWithCopy, Options, ProgressBar, SecurityLevel} from './';
 interface Props {
   title: string;
   showToaster: (show: boolean) => void
@@ -36,7 +36,7 @@ export const Card = ({title, showToaster}: Props) => {
   return (
     <article className="bg-white dark:bg-slate-900 p-5 md:px-11 md:py-6 rounded-xl space-y-4 shadow-xl dark:shadow-none w-[327px] md:w-[650px] lg:w-[655px]">
       <h2 className="text-2xl font-bold dark:text-slate-100 md:text-center">{title}</h2>
-      <Label text={password} copyClipboard={copyToClipboard} />
+      <PasswordWithCopy text={password} copyClipboard={copyToClipboard} />
       <form className="space-y-4">
         <ProgressBar 
           lengthPassword={lengthPassword}
