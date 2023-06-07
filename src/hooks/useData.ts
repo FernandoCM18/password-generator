@@ -32,7 +32,8 @@ export const useData = () => {
     changeSymbols: state.changeSymbols,
   }), shallow);
 
-  const setPasswordHandler = () => {
+  const setPasswordHandler = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    event?.preventDefault();
     const newPassword = generatePassword({
       length: lengthPassword,
       uppercase,
