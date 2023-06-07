@@ -45,12 +45,11 @@ También como extra se agrego el poder seleccionar un tema **Dark**, **Light** o
 5. Te dejo el link para que puedas probar un Demo: [https://fernandocm18.github.io/password-generator/](https://fernandocm18.github.io/password-generator/)
 
 ## Capturas
-
 ### Mobile
-<img src="./src/assets/screenshot/iPhone-dark.jpeg" width="200" />
-<img src="./src/assets/screenshot/iPhone-dark-data.jpeg" width="200" />
-<img src="./src/assets/screenshot/iPhone-light.jpeg" width="200" />
-<img src="./src/assets/screenshot/iPhone-light-data.jpeg" width="200" />
+![iPhone-dark](/src/assets/screenshot/iPhone-dark.jpeg)
+![iPhone-dark-data](/src/assets/screenshot/iPhone-dark-data.jpeg)
+![iPhone-light](/src/assets/screenshot/iPhone-light.jpeg)
+![iPhone-light-data](/src/assets/screenshot/iPhone-light-data.jpeg)
 
 ### Tablet
 ![iPad-dark](/src/assets/screenshot/iPad-dark.jpeg)
@@ -63,5 +62,3 @@ También como extra se agrego el poder seleccionar un tema **Dark**, **Light** o
 ![Desktop-dark-data](/src/assets/screenshot/Desktop-dark-data.jpeg)
 ![Desktop-light](/src/assets/screenshot/Desktop-light.jpeg)
 ![Desktop-light-data](/src/assets/screenshot/Desktop-light-data.jpeg)
-
-
