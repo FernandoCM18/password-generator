@@ -47,12 +47,12 @@ También como extra se agrego el poder seleccionar un tema **Dark**, **Light** o
 ## Capturas
 
 
-![iPad-Dark](/src/assets/capturas/iPad-Dark.jpeg)
-![iPad-Light](/src/assets/capturas/iPad-Light.jpeg)
-![iPone-Dark](/src/assets/capturas/iPhone-Dark.jpeg)
-![iPone-Light](/src/assets/capturas/iPhone-Light.jpeg)
-![Desktop-Dark](/src/assets/capturas/Desktop-Dark.jpeg)
-![Desktop-Light](/src/assets/capturas/Desktop-Light.jpeg)
+![iPad-Dark](/src/assets/screenshot/iPad-Dark.jpeg)
+![iPad-Light](/src/assets/screenshot/iPad-Light.jpeg)
+![iPone-Dark](/src/assets/screenshot/iPhone-Dark.jpeg)
+![iPone-Light](/src/assets/screenshot/iPhone-Light.jpeg)
+![Desktop-Dark](/src/assets/screenshot/Desktop-Dark.jpeg)
+![Desktop-Light](/src/assets/screenshot/Desktop-Light.jpeg)
 
 
 
