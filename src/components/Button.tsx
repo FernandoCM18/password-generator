@@ -4,7 +4,7 @@ interface Props {
   lowercase: boolean; 
   numbers: boolean; 
   symbols: boolean; 
-  setPasswordHandler: () => void;
+  setPasswordHandler: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
 
 export const Button = ({
