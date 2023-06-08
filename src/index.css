@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .title-color {
+    @apply font-bold dark:text-slate-100;
+  }
+  .paragraph-color {
+    @apply text-gray-700 dark:text-gray-500;
+  }
+  .label-color {
+    @apply text-gray-600 dark:text-slate-300;
+  }
+  .bg-primary-color {
+    @apply bg-blue-600;
+  }
+}

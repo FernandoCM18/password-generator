@@ -43,7 +43,7 @@ export const Options = ({
     <div className="flex flex-col space-y-2">
       {
         OPTIONS.map((option) => (
-          <label htmlFor={option.name} className="text-gray-600 dark:text-slate-300" key={option.name}>
+          <label htmlFor={option.name} className="label-color" key={option.name}>
             <input 
               className="form-checkbox rounded text-blue-600 border-2 mr-2 focus:ring-0" 
               type="checkbox" 

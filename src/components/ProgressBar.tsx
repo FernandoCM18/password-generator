@@ -20,7 +20,7 @@ export const ProgressBar = ({min = 0, max = 100, step = 1, lengthPassword, setLe
 
   return (
     <div className="flex flex-col gap-4">
-      <h3 className="flex justify-between items-center text-xl font-bold dark:text-slate-100">
+      <h3 className="flex justify-between items-center text-xl title-color">
         Longitud de caràcter <span className="text-blue-600">{length}</span>
       </h3>
       <input
